@@ -73,6 +73,8 @@ public class ArrayListDS {
         System.out.println(nos.subList(1,3));
         System.out.println(nos.retainAll(Collections.singleton(2)));
 
+
+
     }
 
 
