@@ -8,7 +8,7 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class RemoveDuplicateElementsArrayList {
-    //How to remove duplicates from Arraylists
+    ////How to remove duplicates from Arraylists
     //1. stream //2. LinkedHashSet
     public static void main(String[] args) {
         //LinkedHashSet

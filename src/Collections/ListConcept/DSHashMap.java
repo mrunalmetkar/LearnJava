@@ -1,8 +1,11 @@
 package Collections.ListConcept;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class DSHashMap {
     //Hashmap non syncronized
@@ -33,5 +36,21 @@ public class DSHashMap {
 
         //iterate using lambda and for each
         hashMap.forEach((k,v)->System.out.println(k+v));
+
+        //Immutable hashMap with one entry
+        Map<String,Integer> h=Collections.singletonMap("test",11);
+
+        //creating HashMap using Java8 Stream.Of
+
+        Map<String,String> m=Stream.of(new String[][]{
+                {"q","w"},
+                {"a","g"},
+        }).collect(Collectors.toMap(data->data[0],data->data[1]));
+        System.out.println(m);
+
+
+
+
+
     }
 }

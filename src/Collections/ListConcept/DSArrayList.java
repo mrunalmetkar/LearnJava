@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class DSArrayList {
-
+    //
     //1. Dynamic datastructure
     //2. not synchronized, not thread safe
     //3. maintains insertion order
