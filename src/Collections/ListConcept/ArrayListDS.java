@@ -2,6 +2,7 @@ package Collections.ListConcept;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ArrayListDS {
@@ -48,6 +49,30 @@ public class ArrayListDS {
 
         ArrayList<Integer> list=new ArrayList<Integer>(Arrays.asList(1,2,3));
     System.out.println(list);
+
+    //Methods
+
+        ArrayList<Integer> list1=new ArrayList<Integer>();
+        ArrayList<Integer> list2=new ArrayList<Integer>();
+
+        list1.add(12);
+        list2.add(12);
+
+        list1.addAll( 1,list2);
+
+        list1.contains(12);
+        list1.indexOf(12);
+
+        ArrayList<Integer> cl= (ArrayList<Integer>) list1.clone();
+
+        list1.lastIndexOf(12);
+
+        ArrayList<Integer> nos=new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+        nos.removeIf(no->no%2==0);
+        System.out.println(nos);
+        System.out.println(nos.subList(1,3));
+        System.out.println(nos.retainAll(Collections.singleton(2)));
+
     }
 
 
