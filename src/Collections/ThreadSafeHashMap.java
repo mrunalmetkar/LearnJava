@@ -1,4 +1,4 @@
-package Collections.ListConcept;
+package Collections;
 
 import java.util.Collections;
 import java.util.HashMap;
