@@ -74,5 +74,7 @@ public class JavaFeatures {
 
         // JDK 14: instance of keyword without casting class type
 
+        // JDK 15: sealed class
+
     }
 }
